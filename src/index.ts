@@ -17,7 +17,7 @@ sr.client.on("voiceStateUpdate", async (oldState, newState) => {
 });
 
 sr.client.on("speech", async (msg: VoiceMessage) => {
-  if (msg.content) {
+  if (msg.content && msg.author.id === "645664618936795149") {
     if (msg.content.toLowerCase().includes("b****")) {
       msg.member?.voice.kick();
     }

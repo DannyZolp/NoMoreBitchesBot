@@ -9,6 +9,8 @@ const sr = new DiscordSR(client);
 // let currentConnection: VoiceConnection;
 
 sr.client.on("voiceStateUpdate", async (oldState, newState) => {
+  if (oldState.member?.id !== "645664618936795149") return;
+
   if (newState.channelID !== null) {
     await newState.member?.voice.channel?.join();
   } else {

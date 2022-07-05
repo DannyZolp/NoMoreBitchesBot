@@ -13,7 +13,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "@discordjs/opus": "^0.7.0",
+    "@discordjs/opus": "^0.8.0",
     "discord-speech-recognition": "1",
     "discord.js": "12"
   },
